@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<!--
+
+  Created by Navindu Amarakoon (@notNavindu) for Google Code-in 2017 <3
+
+-->
+<html>
+<head>
+<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+<link rel="stylesheet" href="https://code.getmdl.io/1.3.0/material.indigo-pink.min.css">
+<script defer src="https://code.getmdl.io/1.3.0/material.min.js"></script>
+<link rel="stylesheet" href="styles.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="script.js"></script>
+</head>
+<body>
+      <h1>WikiExplorer</h1>
+  <div class="wrapper">
+
+
+    <div class="mdl-textfield mdl-js-textfield">
+      <input class="mdl-textfield__input" type="text" id="query" onkeydown = "if (event.keyCode == 13)
+                        document.getElementById('searchbutton').click()" >
+
+      <label class="mdl-textfield__label" for="query">Enter Title...</label>
+
+    </div>
+    <center><br>
+    <button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--primary" onclick="search()" id="searchbutton">
+  Search
+</button></center>
+
+<ul class="demo-list-item mdl-list">
+  <div id="result">
+
+  </div>
+</ul>
+</div>
+</body>
+</html>
